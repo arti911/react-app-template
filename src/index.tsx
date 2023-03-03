@@ -6,11 +6,10 @@ import reportWebVitals from "reportWebVitals";
 
 import "./index.scss";
 
-const element = document.getElementById("root");
+const root = document.getElementById("root");
 
-if (element) {
-  const root = createRoot(element);
-  root.render(
+if (root) {
+  createRoot(root).render(
     <React.StrictMode>
       <App />
     </React.StrictMode>,
