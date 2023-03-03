@@ -28,8 +28,7 @@
     "lint:css:fix": "npm run lint:css -- --fix",
     "format": "prettier --check src --config ./.prettierrc",
     "format:fix": "prettier --write src --config ./.prettierrc",
-    "prepare": "husky install",
-    "precommit": "lint-staged"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -70,12 +69,5 @@
     "stylelint-config-standard": "^30.0.1",
     "stylelint-config-standard-scss": "^7.0.1",
     "stylelint-order": "^6.0.2"
-  },
-  "lint-staged": {
-    "*.{ts, tsx}": [
-      "eslint --max-warnings=0",
-      "prettier --write",
-      "git add"
-    ]
   }
 }
