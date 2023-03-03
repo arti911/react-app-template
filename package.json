@@ -21,6 +21,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "predeploy:surge": "set PUBLIC_URL=/&& npm run build && copy CNAME build",
+    "deploy:surge": "surge build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
