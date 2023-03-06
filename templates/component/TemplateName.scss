@@ -1,0 +1,7 @@
+$parent: template-name;
+
+.#{$parent} {
+  h1 {
+    color: tomato;
+  }
+}

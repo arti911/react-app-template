@@ -1,0 +1,13 @@
+$parent: app;
+
+.#{$parent} {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: stretch;
+
+  color: white;
+
+  background-color: gray;
+}
