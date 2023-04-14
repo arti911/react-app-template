@@ -1,11 +1,10 @@
-import React from "react";
-
-import "./App.scss";
+import './App.scss';
 
 const App = () => {
   return (
     <div className="app">
-      <h1>Hey! I am your new react project!</h1>
+      <h1>Hey ✌️</h1>
+      <h2>I&apos;m your new project 👨🏼‍💻👩🏼‍💻</h2>
     </div>
   );
 };
