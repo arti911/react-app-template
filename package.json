@@ -4,19 +4,19 @@
   "private": true,
   "homepage": "https://username.github.io/reponame",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@types/jest": "^29.5.0",
-    "@types/node": "^18.15.11",
-    "@types/react": "^18.0.33",
-    "@types/react-dom": "^18.0.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
+    "@types/jest": "29.5.0",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.35",
+    "@types/react-dom": "18.0.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.61.0",
-    "typescript": "^5.0.3",
-    "web-vitals": "^3.3.1"
+    "sass": "1.62.0",
+    "typescript": "5.0.4",
+    "web-vitals": "3.3.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -38,22 +38,6 @@
     "build-storybook": "build-storybook -s public",
     "generate": "npx generate-react-cli component"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -67,44 +51,49 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-interactions": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/builder-webpack5": "^6.5.16",
-    "@storybook/manager-webpack5": "^6.5.16",
-    "@storybook/node-logger": "^6.5.16",
-    "@storybook/preset-create-react-app": "^4.1.2",
-    "@storybook/react": "^6.5.16",
-    "@storybook/testing-library": "^0.0.13",
-    "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.57.1",
-    "babel-plugin-named-exports-order": "^0.0.2",
-    "eslint": "^8.37.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-import-resolver-typescript": "^3.5.5",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-json-files": "^2.1.0",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-storybook": "^0.6.11",
-    "fork-ts-checker-webpack-plugin": "^8.0.0",
-    "generate-react-cli": "^8.2.0",
-    "gh-pages": "^5.0.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.2.1",
-    "prettier": "^2.8.7",
-    "prop-types": "^15.8.1",
-    "stylelint": "^15.4.0",
-    "stylelint-config-clean-order": "^5.0.1",
-    "stylelint-config-recess-order": "^4.0.0",
-    "stylelint-config-standard": "^32.0.0",
-    "stylelint-config-standard-scss": "^7.0.1",
-    "stylelint-order": "^6.0.3",
-    "webpack": "^5.75.0"
+    "@storybook/addon-actions": "6.5.16",
+    "@storybook/addon-essentials": "6.5.16",
+    "@storybook/addon-interactions": "6.5.16",
+    "@storybook/addon-links": "6.5.16",
+    "@storybook/builder-webpack5": "6.5.16",
+    "@storybook/manager-webpack5": "6.5.16",
+    "@storybook/node-logger": "6.5.16",
+    "@storybook/preset-create-react-app": "4.1.2",
+    "@storybook/react": "6.5.16",
+    "@storybook/testing-library": "0.0.13",
+    "@typescript-eslint/eslint-plugin": "5.58.0",
+    "@typescript-eslint/parser": "5.58.0",
+    "babel-plugin-named-exports-order": "0.0.2",
+    "eslint": "8.38.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-import-resolver-typescript": "3.5.5",
+    "eslint-plugin-compat": "4.1.4",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-json-files": "2.1.0",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-no-loops": "0.3.0",
+    "eslint-plugin-no-use-extend-native": "0.5.0",
+    "eslint-plugin-optimize-regex": "1.2.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-sonarjs": "0.19.0",
+    "eslint-plugin-storybook": "0.6.11",
+    "fork-ts-checker-webpack-plugin": "8.0.0",
+    "generate-react-cli": "8.3.0",
+    "gh-pages": "5.0.0",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.1",
+    "prettier": "2.8.7",
+    "prop-types": "15.8.1",
+    "stylelint": "15.4.0",
+    "stylelint-config-clean-order": "5.0.1",
+    "stylelint-config-standard": "32.0.0",
+    "stylelint-config-standard-scss": "8.0.0",
+    "stylelint-order": "6.0.3",
+    "webpack": "5.79.0"
   }
 }
