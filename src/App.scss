@@ -1,0 +1,15 @@
+$parent: app;
+
+.#{$parent} {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: stretch;
+  padding-inline: 15px;
+
+  color: white;
+
+  background-color: gray;
+}
