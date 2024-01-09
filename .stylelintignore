@@ -4,6 +4,8 @@
 *.js
 *.md
 *.svg
+*.png
+*.mdx
 
 # dependencies
 /node_modules

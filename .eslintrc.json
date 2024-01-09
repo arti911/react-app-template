@@ -9,20 +9,32 @@
     "airbnb/hooks",
     "airbnb-typescript",
     "eslint:recommended",
+    "eslint:all",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react/all",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:import/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
     "plugin:import/typescript",
+    "plugin:testing-library/react",
+    "plugin:jest/all",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
     "plugin:jsx-a11y/recommended",
     "plugin:storybook/recommended",
     "plugin:compat/recommended",
     "plugin:sonarjs/recommended",
+    "plugin:unicorn/all",
+    "plugin:unicorn/recommended",
     "plugin:no-use-extend-native/recommended",
     "plugin:promise/recommended",
     "plugin:optimize-regex/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "prettier"
   ],
   "overrides": [
     {
@@ -51,10 +63,14 @@
     "react",
     "react-hooks",
     "@typescript-eslint",
+    "simple-import-sort",
     "import",
+    "testing-library",
+    "jest",
     "jsx-a11y",
     "json-files",
     "sonarjs",
+    "unicorn",
     "no-use-extend-native",
     "promise",
     "optimize-regex",
@@ -71,25 +87,26 @@
     }
   },
   "rules": {
-    "prettier/prettier": "error",
-    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": 2,
+    "react/require-default-props": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-no-literals": 0,
     "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
-    "camelcase": "error",
-    "spaced-comment": "error",
-    "quotes": ["error", "single"],
-    "jsx-quotes": ["error", "prefer-double"],
-    "no-duplicate-imports": "error",
-    "import/order": [
-      2,
-      {
-        "groups": ["external", "builtin", "index", "sibling", "parent", "internal", "type"],
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        },
-        "newlines-between": "always-and-inside-groups"
-      }
-    ],
-    "no-loops/no-loops": "error"
+    "react/jsx-max-depth": [2, { "max": 5 }],
+    "camelcase": 2,
+    "spaced-comment": 2,
+    "quotes": [2, "single"],
+    "jsx-quotes": [2, "prefer-double"],
+    "no-duplicate-imports": 2,
+    "no-loops/no-loops": 2,
+    "no-ternary": 0,
+    "simple-import-sort/imports": 2,
+    "simple-import-sort/exports": 2,
+    "import/first": 2,
+    "import/newline-after-import": 2,
+    "import/no-duplicates": 2,
+    "sort-imports": 0,
+    "unicorn/filename-case": [2, { "cases": { "pascalCase": true, "camelCase": true } }],
+    "max-lines-per-function": [2, 100]
   }
 }
